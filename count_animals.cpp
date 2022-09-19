@@ -7,7 +7,8 @@ int main(){
     float total_wt = 36;
 
     for (int num_pigs = 0; num_pigs * wt_pig <= total_wt;num_pigs++){
-        float remain_wt = total_wt - num_pigs * wt_pig;
+        //float remain_wt = total_wt - num_pigs * wt_pig;
+        double remain_wt = total_wt - num_pigs * wt_pig;
         int num_sheeps = remain_wt/ wt_sheep;
         remain_wt -= num_sheeps * wt_sheep;
 
