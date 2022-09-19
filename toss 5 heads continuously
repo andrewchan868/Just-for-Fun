@@ -1,0 +1,21 @@
+import random
+required_head = 5
+length_array = []
+for i in range(int(1e4)):
+    heads = 0
+    length = 0
+    while heads < required_head:
+        length +=1
+        if random.choice(['H','T'])=='H':
+            heads +=1
+        else:
+            heads = 0
+    length_array.append(length)
+    
+print(length_array)
+total = 0
+i = 0
+for i in range(len(length_array)):
+    total = total+length_array[i]
+
+print(total/1e4)
